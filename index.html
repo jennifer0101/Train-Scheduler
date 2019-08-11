@@ -7,36 +7,39 @@
     <title>Firebase Train Scheduling</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">All Aboard!</h1>
-            <p class="lead">Train Schedules and Times</p>
+        <div class="jumbotron bg-success text-white">
+            <h1 class="text-center">All Aboard!</h1>
+            <h3 class="text-center">Train Schedules and Times</h3>
         </div>
         <div class="card mt-3">
-            <div class="card-header">
+            <div class="card-header bg-success text-white">
                 Current Train Schedule
             </div>
             <div class="card-body">
                 <table id="train-schedule" class="table">
                     <tr>
-                        <th>Train Name</th>
-                        <th>Destination</th>
-                        <th>Frequency (min)</th>
-                        <th>Next Arrival</th>
-                        <th>Minutes Away</th>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
                     </tr>
                 </table>
             </div>
         </div>
         <div class="card mt-4">
-            <div class="card-header">
+            <div class="card-header bg-success text-white">
                 Add Train
             </div>
             <div class="card-body">
@@ -63,6 +66,7 @@
         </div>
     </div>
     <footer>
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/javascript/train.js"></script>
     </footer>
