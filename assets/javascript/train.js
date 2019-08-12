@@ -20,8 +20,9 @@ var firebaseConfig = {
       //grabs user input
       var trainName = $("#train-name").val().trim();
       var destination = $("#destination").val().trim();
-      var firstTime = moment($("#train-time").val().trim(), "HH:mm").format("X");
+      var firstTime = moment($("#train-time").val().trim(), "HH:mm").format("HH:mm");
       var frequency = $("#frequency").val().trim();
+      console.log(firstTime);
       
 
       //creates local "temporary" object for holding train data
@@ -45,7 +46,7 @@ var firebaseConfig = {
       //clears all of the text-boxes
       $("#train-name").val("");
       $("#destination").val("");
-      ("#train-time").val("");
+      $("#train-time").val("");
       $("#frequency").val("");
 });
 
