@@ -73,14 +73,10 @@ database.ref().on("child_added", function (childSnapshot) {
     $("<td>").text(frequency),
     $("<td>").text(arrive),
     $("<td>").text(tMinutesTillTrain),
-   
+    console.log("running line 76")
   );
 
   //append new row to table
-  $("#train-schedule > tbody").append(newRow);
-  console.log(newRow);
-})
-
-
-
-
+  $("#train-schedule").append(newRow);
+  console.log("running line 80");
+});
